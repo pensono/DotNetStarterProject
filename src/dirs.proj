@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.Build.Traversal/3.0.3">
+  <ItemGroup>
+    <ProjectReference Include="MyComponent/StarterProject.MyComponent.csproj" />
+    <ProjectReference Include="AnotherComponent/StarterProject.AnotherComponent.csproj" />
+  </ItemGroup>
+</Project>
