@@ -10,6 +10,7 @@
     <!-- Build -->
     <PropertyGroup>
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+        <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild> <!-- Enable linter -->
     </PropertyGroup>
     
     <!-- Packaging -->
