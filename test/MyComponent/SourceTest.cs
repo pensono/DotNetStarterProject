@@ -1,9 +1,8 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Xunit;
 
-[TestClass]
 public class SourceTest
 {
-    [TestMethod]
+    [Fact]
     public void Test()
     {
         // Do nothing

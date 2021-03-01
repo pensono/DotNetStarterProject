@@ -1,6 +1,4 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <Sdk Name="Microsoft.Build.CentralPackageVersions" Version="2.0.79" />
-
   <ItemGroup>
     <ProjectReference Include="../AnotherComponent/StarterProject.AnotherComponent.csproj" />
   </ItemGroup>

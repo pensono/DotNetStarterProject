@@ -6,6 +6,11 @@
         <Nullable>enable</Nullable>
         <Packable>false</Packable>
     </PropertyGroup>
+
+    <!-- Build -->
+    <PropertyGroup>
+        <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    </PropertyGroup>
     
     <!-- Packaging -->
     <PropertyGroup>
