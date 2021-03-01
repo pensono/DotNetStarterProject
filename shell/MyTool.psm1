@@ -1,5 +1,5 @@
 function Invoke-MyTool() {
-    dotnet run -p tools/MyTool/MyTool.csproj -- @args
+    dotnet run -p tools/MyTool/StarterProject.MyTool.csproj -- @args
 }
 
 Export-ModuleMember *-*
