@@ -2,5 +2,8 @@
     "sdk": {
       "version": "5.0.103",
       "rollForward": "latestMajor"
+    },
+    "msbuild-sdks": {
+      "Microsoft.Build.Traversal": "3.0.3"
     }
   }

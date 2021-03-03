@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.Build.Traversal/3.0.3">
+<Project Sdk="Microsoft.Build.Traversal">
   <ItemGroup>
     <ProjectReference Include="MyComponent/StarterProject.Test.MyComponent.csproj" />
   </ItemGroup>

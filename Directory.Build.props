@@ -4,17 +4,21 @@
         <TargetFramework>net5.0</TargetFramework>
         <LangVersion>9.0</LangVersion>
         <Nullable>enable</Nullable>
-        <Packable>false</Packable>
+        <Features>strict</Features>
     </PropertyGroup>
 
     <!-- Build -->
     <PropertyGroup>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
         <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild> <!-- Enable linter -->
     </PropertyGroup>
     
     <!-- Packaging -->
     <PropertyGroup>
+        <IsPackable>false</IsPackable>
+        <IsPublishable>false</IsPublishable>
+
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
         <EmbedUntrackedSources>true</EmbedUntrackedSources>
