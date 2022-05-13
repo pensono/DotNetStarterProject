@@ -2,7 +2,7 @@ function Start-VisualStudio() {
     $solutionName = (Get-Item .).Name
 
     dotnet new sln --force --name $solutionName
-    Get-ChildItem -Recurse *.csproj | ForEach { dotnet sln add $_.FullName }
+    dotnet sln add @(Get-ChildItem -Recurse *.csproj)
     start "$solutionName.sln"
 }
 
