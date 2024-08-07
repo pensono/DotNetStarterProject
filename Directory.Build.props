@@ -1,8 +1,8 @@
 <Project>
     <!-- General -->
     <PropertyGroup>
-        <TargetFramework>net5.0</TargetFramework>
-        <LangVersion>9.0</LangVersion>
+        <TargetFramework>net8.0</TargetFramework>
+        <LangVersion>12.0</LangVersion>
         <Nullable>enable</Nullable>
         <Features>strict</Features>
     </PropertyGroup>
@@ -12,6 +12,8 @@
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
         <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild> <!-- Enable linter -->
+        <UseArtifactsOutput>true</UseArtifactsOutput>
+        <RepositoryRoot>$(MSBuildThisFileDirectory)</RepositoryRoot>
     </PropertyGroup>
     
     <!-- Packaging -->
@@ -19,6 +21,7 @@
         <IsPackable>false</IsPackable>
         <IsPublishable>false</IsPublishable>
 
+        <!-- These properties will be used if packaging is enabled for a project -->
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
         <EmbedUntrackedSources>true</EmbedUntrackedSources>

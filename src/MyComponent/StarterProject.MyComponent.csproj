@@ -1,10 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <ProjectReference Include="../AnotherComponent/StarterProject.AnotherComponent.csproj" />
+    <ProjectReference Include="$(RepositoryRoot)/src/AnotherComponent/StarterProject.AnotherComponent.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" />
     <PackageReference Include="Serilog" />
   </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <ProjectReference Include="../../src/MyComponent/StarterProject.MyComponent.csproj" />
+    <ProjectReference Include="$(RepositoryRoot)/src/MyComponent/StarterProject.MyComponent.csproj" />
   </ItemGroup>
 
   <ItemGroup>

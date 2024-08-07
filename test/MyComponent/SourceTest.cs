@@ -5,6 +5,6 @@ public class SourceTest
     [Fact]
     public void Test()
     {
-        // Do nothing
+        Assert.True(true);
     }
 }
