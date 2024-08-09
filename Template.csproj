@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Version>0.0.1</Version>
+    <PackageType>Template</PackageType>
+    <PackageVersion>0.0.1</PackageVersion>
+    <PackageId>Pensono.DotNetStarterProject</PackageId>
+    <Title>.NET Starter Project</Title>
+    <Authors>Ethan Shea</Authors>
+    <Description>A best-practices starter project for .NET. See: https://www.ethan-shea.com/posts/setting-up-dotnet-2024.</Description>
+    <PackageTags>dotnet-new;templates;starterproject</PackageTags>
+    <TargetFramework>net8.0</TargetFramework>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
+    <IsPackable>true</IsPackable>
+    <IsPublishable>true</IsPublishable>
+    <NoWarn>$(NoWarn);NU5110;NU5107</NoWarn>
+
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="**/*" Exclude="Template.csproj;artifacts/**;.git/**;_._" />
+    <None Include="README.md" Pack="True" PackagePath="" />
+    <None Include="_._" Pack="True" PackagePath="lib/net8.0" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+</Project>
